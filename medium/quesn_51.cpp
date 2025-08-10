@@ -1,3 +1,7 @@
+
+// This is not leetcode problem, only kadanes algo solved from TUF website.
+
+
 #include <vector>
 #include <iostream>
 using namespace std;
