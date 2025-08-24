@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: configure
+      run: .easy, .medium
     
     - name: make
       run: make
