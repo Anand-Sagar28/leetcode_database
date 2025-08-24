@@ -14,8 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: configure
-      run: .easy, .medium
-    
+      run: .easy
+    - name: configure
+      run: .medium
     - name: make
       run: make
     - name: make check
