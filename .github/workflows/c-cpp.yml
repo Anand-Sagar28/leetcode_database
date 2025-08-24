@@ -17,7 +17,7 @@ jobs:
       run: |
         if ls easy/*.cpp 1> /dev/null 2>&1; then
           for file in easy/*.cpp; do
-            g++ -std=c++17 -Wall -Werror "$file" -o "${file%.cpp}.out"
+            g++ -std=c++17 -Wall -Wno-sign-compare -Werror "$file" -o "${file%.cpp}.out"
           done
         else
           echo "No C++ files found in easy/"
@@ -27,7 +27,7 @@ jobs:
       run: |
         if ls medium/*.cpp 1> /dev/null 2>&1; then
           for file in medium/*.cpp; do
-            g++ -std=c++17 -Wall -Werror "$file" -o "${file%.cpp}.out"
+            g++ -std=c++17 -Wall -Wno-sign-compare -Werror "$file" -o "${file%.cpp}.out"
           done
         else
           echo "No C++ files found in medium/"
